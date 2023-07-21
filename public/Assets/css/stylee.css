@@ -1,0 +1,202 @@
+body {
+    background-image: url(bg.png);
+    background-size: cover;
+}
+
+.main-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+video {
+    background: black;
+    border: 1px solid gray;
+}
+
+.call-wrap {
+    position: relative;
+    display: block;
+    padding: 10px;
+}
+
+#local-video {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 9;
+}
+
+
+
+.chat-wrap {
+    display: block;
+    width: 400px;
+    margin-left: 15px;
+    padding: 10px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.call-hang-status {
+    position: absolute;
+    z-index: 999;
+    height: 97%;
+    width: 100%;
+}
+
+.calling-status-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 9;
+}
+
+.user-image img {
+    height: 150px;
+    width: 150px;
+}
+
+.user-name {
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+.user-calling-status {
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+.calling-action {
+    padding: 50px 0 0 0;
+    display: flex;
+}
+
+.audio-icon {
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.close-icon {
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.call-status-wrap {
+    height: 500px;
+    width: 500px;
+}
+
+.calling-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 9;
+}
+
+.calling-hang-action {
+    padding: 420px 0 0 0;
+    display: flex;
+}
+
+.video-toggle {
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.audio-toggle {
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.call-cancel-icon {
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.chat-wrap {
+    display: block;
+    width: 400px;
+    margin-left: 15px;
+    padding: 10px;
+    max-height: 500px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-bottom: 75px;
+}
+
+#remote-video {
+    width: 60vw;
+    height: 600px;
+}
+
+#remote-video > * {
+
+    flex: 1 1 250px;
+    border: 1px solid white;
+    /* background-color:brown; */
+}
+
+video {
+    height: 200px;
+}
+
+.div-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-center-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#panell{
+    margin-top: 100px;
+    padding: 0px;
+  }
+  #loginbtn{
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  #title{
+    background-color: #2bbbad;
+    color: white;
+    padding: 8px;
+    margin-top: 0px
+  }
+  form{
+    padding:0px;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  #username,#password{
+   margin-left: 20px;
+   margin-right: 20px;
+  }
+  div#panell {
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20%;
+}
