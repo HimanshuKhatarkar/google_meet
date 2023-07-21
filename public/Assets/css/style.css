@@ -1,0 +1,27 @@
+body{
+    font-family: robot, lato !important;
+    font-size: large;
+}
+
+.logo{
+    height: 43px;
+}
+.navbar-brand{
+    font-size: 27px;
+    font-family: 'lato';
+    padding-left: 10px;
+}
+.nav-item a{
+    color: gray !important;
+    font-size: 16px;
+    padding: 0px 10px;
+
+}
+.display-centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li.nav-item{
+    padding: 0 10px;
+}
