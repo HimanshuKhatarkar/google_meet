@@ -37,3 +37,12 @@ ul{
     margin: 0;
 
 }
+textarea:focus, input:focus{
+    outline: none !important;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.jumbotron{
+    background-color: white;
+}
