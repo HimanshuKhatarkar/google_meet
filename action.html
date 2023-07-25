@@ -34,7 +34,7 @@
                     <a href="#" class="nav-link">Sign In</a>
                 </li>
                 <li class="nav-item ">
-                    <button class="btn btn-outline-secondary btn-lg text-info font-weight-bold">Join a Meeting</button>
+                    <button class="btn btn-outline-secondary btn-lg text-info font-weight-bold join-meeting">Join a Meeting</button>
                 </li>
                 <li class="nav-item">
                     <button class="btn btn-lg btn-info text-light font-weight-bold">Create New Meeting</button> 
@@ -60,10 +60,10 @@
                         <button class="btn btn-lg btn-outline-secondary text-dark font-weight-bold display-centre" 
                         style="background-color: #ffffff;">
                             <span class="material-icons mr-2">keyboard</span>
-                            <input type="text" placeholder="Enter a code" style="border :none">
+                            <input type="text" placeholder="Enter a code" style="border :none" class="enter-code">
                         </button>
                     </li>
-                    <li class="text-dark pl-3 font-weight-bold cursor-pointer">
+                    <li class="text-dark pl-3 font-weight-bold cursor-pointer join-action">
                         Join
                     </li>
                 </ul>
@@ -74,6 +74,18 @@
         </div>
     </main>
     <footer class="container"><h6>Learn More about  <span class="learn-more text-info">Google Meet</span></h6></footer>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $(document).on("click",".join-meeting",function(){
+                $(".enter-code").focus();
+            })
+            $(document).on("click",".join-action",function(){
+                var join_value=$('.enter-code').val();
+                var meetingUrl = window.location.origin+"?meetingID="+join_value;
+                window.location.replace(meetingUrl);
+            })
+        })
+    </script>
 </body>
 </html>
