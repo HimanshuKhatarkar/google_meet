@@ -37,7 +37,7 @@
                     <button class="btn btn-outline-secondary btn-lg text-info font-weight-bold join-meeting">Join a Meeting</button>
                 </li>
                 <li class="nav-item">
-                    <button class="btn btn-lg btn-info text-light font-weight-bold">Create New Meeting</button> 
+                    <button class="btn btn-lg btn-info text-light font-weight-bold new-meeting">Create New Meeting</button> 
                 </li>
 
             </ul>
@@ -50,7 +50,7 @@
                 <p>We're Re-designing the Google Meet for secure Business Meeting and making it free to everyone. </p>
                 <ul class="display-centre justify-content-start">
                     <li style="padding: 0;">
-                        <button class="btn btn-lg text-light font-weight-bold display-centre" 
+                        <button class="btn btn-lg text-light font-weight-bold display-centre new-meeting" 
                         style="background-color: #01796b;">
                             <span class="material-icons mr-2">video_call</span>
                             New Meeting
@@ -83,6 +83,11 @@
             $(document).on("click",".join-action",function(){
                 var join_value=$('.enter-code').val();
                 var meetingUrl = window.location.origin+"?meetingID="+join_value;
+                window.location.replace(meetingUrl);
+            })
+            $(document).on("click",".new-meeting",function(){
+                var eight_d_value= Math.floor(10000000+Math.random()*99999999);
+                var meetingUrl = window.location.origin+"?meetingID="+eight_d_value;
                 window.location.replace(meetingUrl);
             })
         })
