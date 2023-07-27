@@ -17,7 +17,7 @@ body{
     padding: 0px 10px;
 
 }
-.display-centre{
+.display-center{
     display: flex;
     justify-content: center;
     align-items: center;
