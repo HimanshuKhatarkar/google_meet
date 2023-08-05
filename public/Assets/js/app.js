@@ -1,8 +1,15 @@
 var MyApp = (function(){
+    var socket =null;
     function init(uid, mid){
-        alert("from app js");
-        console.log("uid:", uid);
-        console.log("mid:", mid);
+        event_process_for_signaling_server();
+
+    }
+   
+    function event_process_for_signaling_server(){
+        socket = io.connect();
+        socket.on("connect", ()=>{
+            alert("Client side socket connected");
+        });
     }
 
     return {
